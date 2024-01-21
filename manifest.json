@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Time Tracker for Google Calendar",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["identity"],
+    "host_permissions": ["https://www.googleapis.com/"],
+    "oauth2": {
+        "client_id": "376142609857-8nviidrdqpjk787tfv7na9150e5ajfrg.apps.googleusercontent.com",
+        "scopes": [   
+            "https://www.googleapis.com/auth/calendar.readonly"
+        ]
+    }
+}
