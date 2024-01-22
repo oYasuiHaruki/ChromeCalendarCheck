@@ -46,7 +46,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         // 例: データベースへの保存、集計、通知の送信など
 
         // 応答を送信する
-        sendResponse({ status: 'Success', message: 'Events processed'});
+        sendResponse({ status: 'Success', message: 'Events processed' });
     }
     return true;
 });

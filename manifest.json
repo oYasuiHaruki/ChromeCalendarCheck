@@ -3,18 +3,27 @@
     "name": "Google Calendar Time Tracker",
     "version": "1.0",
     "description": "Track time in Google Calendar",
-    "permissions": ["storage", "activeTab", "scripting", "https://www.googleapis.com/*"],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "https://www.googleapis.com/*"
+    ],
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "js/background.js"
     },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "icon.png"
+        "default_icon": "img/icon.png"
     },
     "content_scripts": [
         {
-            "matches": ["*://calendar.google.com/*"],
-            "js": ["content.js"]
+            "matches": [
+                "*://calendar.google.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ]
         }
     ]
 }
