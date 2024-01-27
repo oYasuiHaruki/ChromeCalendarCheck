@@ -1,5 +1,5 @@
 body {
-    width: 300px;
-    padding: 10px;
+    min-width: 500px;
+    min-height: 300px;
     font-family: Arial, sans-serif;
 }
